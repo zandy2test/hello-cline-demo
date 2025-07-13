@@ -1,6 +1,9 @@
 // Hello Cline Demo - Interactive JavaScript
 // This file contains all the interactive functionality for the demo
 
+// TODO: Add more animation effects for better user experience
+// FIXME: Optimize confetti performance for slower devices
+
 // Counter variables
 let clickCount = 0;
 let hoverCount = 0;

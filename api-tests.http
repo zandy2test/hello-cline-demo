@@ -1,0 +1,49 @@
+### Test API Examples for REST Client Extension
+### Click "Send Request" above each request to test
+
+### 1. Simple GET request - Test a public API
+GET https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+###
+
+### 2. Get multiple posts
+GET https://jsonplaceholder.typicode.com/posts?_limit=3
+Content-Type: application/json
+
+###
+
+### 3. Test POST request (creates fake data)
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+  "title": "My New Post",
+  "body": "This is the content of my post",
+  "userId": 1
+}
+
+###
+
+### 4. Test with headers
+GET https://api.github.com/users/octocat
+Accept: application/vnd.github.v3+json
+User-Agent: VS-Code-REST-Client
+
+###
+
+### 5. Example for when you build your own API
+# POST http://localhost:3000/api/users
+# Content-Type: application/json
+# Authorization: Bearer your-token-here
+# 
+# {
+#   "name": "John Doe",
+#   "email": "john@example.com"
+# }
+
+### Notes:
+### - Click "Send Request" above any request to test it
+### - Results appear in a new tab
+### - Perfect for testing APIs before implementing them in your code
+### - Use ### to separate different requests
